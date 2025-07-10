@@ -3,9 +3,11 @@
 
 - **Visualization of Lithofacies Prediction Results for Blind Wells Using Different Methods**
 <div align="center">
-  <img src="pic/Well1.jpg" width="400" />
-  <img src="pic/Well2.jpg" width="400" />
-  <img src="pic/Well3.jpg" width="400" />
+  <img src="pic/Well1.jpg" width="300" />
+  <img src="pic/Well2.jpg" width="300" />
+  <img src="pic/Well3.jpg" width="300" />
+  <img src="pic/Well4.jpg" width="300" />
+  <img src="pic/Well5.jpg" width="300" />
 </div>
 
 - **Accuracy of FDMatch with Different Label Proportions on the DA and DB Datasets**
