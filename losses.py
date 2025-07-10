@@ -9,7 +9,7 @@ def advanced_jump_penalty(logits, edge_index, cluster_labels, depth, gamma=0.5, 
     cluster_same = (cluster_labels[i] == cluster_labels[j])
     is_boundary = (depth_diff > 3.0) & (~cluster_same)
 
-    # 分项计算
+
     penalty_cluster = pred_diff[cluster_same].mean() if cluster_same.any() else 0.0
     penalty_depth = pred_diff[depth_diff < 3.0].mean() if (depth_diff < 3.0).any() else 0.0
     dynamic_threshold = torch.quantile(pred_diff, 0.9)
