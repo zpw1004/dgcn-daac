@@ -13,9 +13,9 @@ def train_model():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # Load and prepare data
-    train_data, scaler, depth_train, cluster_train = build_sample_graph("源域A.csv",
+    train_data, scaler, depth_train, cluster_train = build_sample_graph("A.csv",
                                                                         fit_scaler=True)
-    test_data, _, depth_test, cluster_test = build_sample_graph("目标域B.csv", scaler=scaler)
+    test_data, _, depth_test, cluster_test = build_sample_graph("B.csv", scaler=scaler)
 
     cluster_data_train, Q_train = build_cluster_graph(train_data.x.cpu().numpy())
     cluster_data_test, Q_test = build_cluster_graph(test_data.x.cpu().numpy())
