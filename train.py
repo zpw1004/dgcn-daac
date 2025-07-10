@@ -37,16 +37,16 @@ def train_model():
     best_metrics = {}
 
     print("Start Training...")
-    for epoch in range(1, 6001):
+    for epoch in range(1, 9001):
         model.train()
         optimizer.zero_grad()
 
         # Choose alpha value based on training stage
-        if epoch <= 2000:
+        if epoch <= 4000:
             alpha = 0.0
             stage = "Stage 1"
         else:
-            alpha = 2. / (1. + np.exp(-10 * (epoch - 2000) / (6000 - 2000))) - 1
+            alpha = 2. / (1. + np.exp(-10 * (epoch - 4000) / (9000 - 4000))) - 1
             stage = "Stage 2"
 
         # Forward pass
