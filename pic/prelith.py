@@ -9,15 +9,15 @@ import torch
 set_option("display.max_rows", 10)
 pd.options.mode.chained_assignment = None
 # filename = 'facies_vectors.csv'
-training_data = pd.read_csv('../../../../../dataset/American/目标域B.csv')
+training_data = pd.read_csv('')
 training_data  = training_data .dropna()
-n= training_data[training_data['Well Name'] == 'CROSS H CATTLE']
+n= training_data[training_data['Well Name'] == '']
 
 
 file_path_gat_cdan = "wa_wb_gat_cdan.txt"
 file_path_gat_dann = "wa_wb_gat_dann.txt"
 file_path_gat_mdd = "wa_wb_gat_mdd.txt"
-file_path_dgcn_daal = "wa_wb_领域自适应.txt"
+file_path_dgcn_daal = "wa_wb_dgcn_daac.txt"
 
 def read_file(file_name):
     with open(file_name, "r") as file:
