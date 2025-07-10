@@ -10,26 +10,9 @@
   <img src="pic/Well5.jpg" width="300" />
 </div>
 
-- **Accuracy of FDMatch with Different Label Proportions on the DA and DB Datasets**
-<div align="center">
-  <img src="output/da_chart.jpg" width="400" />
-  <img src="output/db_chart.jpg" width="400" />
-</div>
 
-- **Lithologic visualization**
-<div align="center">
-  <img src="output/pre_lith.jpg" width="600" />
-</div>
-
-***
-## Paper Support
-- Original information: FDMatch: Feature-Depth Similarity Based FixMatch for Semi-Supervised Lithology Identification
-***
-## Description of the project
-FDMatch is a semi-supervised learning method that enhances classification accuracy and generalization by integrating feature and depth similarity matrices, filtering noisy pseudo-labels above a predefined threshold, and applying consistency regularization.
-***
 ## Functions of the project
-This project is a deep learning model for geological data analysis, designed to perform semi-supervised learning using the FDMatch method. It integrates feature and depth similarity matrices to reduce reliance on labeled data, while enhancing the model's accuracy and generalization ability in the presence of noisy labels.
+This project proposes a dual-graph neural network with domain adaptation and geological constraints to enhance cross-well lithofacies classification, achieving high accuracy and generalization under complex geological conditions.
 ***
 ## The operating environment of the project
 -	Python == 3.8.17
