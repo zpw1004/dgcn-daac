@@ -100,7 +100,7 @@ def train_model():
                 "f1": f1
             }
             torch.save(model.state_dict(), "wb_wa_best_fusion_model.pth")
-            np.savetxt("wa_wb_领域自适应.txt", pred_tgt.numpy(), fmt='%d')
+            np.savetxt("wa_wb.txt", pred_tgt.numpy(), fmt='%d')
             cm = confusion_matrix(true_tgt, pred_tgt)
             with open("wa_wb_DGCN_DAAL.pkl", "wb") as f:
                 pickle.dump(cm, f)
